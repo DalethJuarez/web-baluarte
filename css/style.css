@@ -50,12 +50,9 @@ h3,p,small,button, .sub{
 	color:#fff;
 }
 h3, .sub{
-	font-style: italic;
-	
+	font-style: italic;	
 }
-.sub{
 
-}
 p{
 	font-weight: 300;
 	font-size: 14px;
@@ -69,19 +66,87 @@ small{
 ul li{
 			list-style-type: none;
 		}
+.azul{
+	color:#18272F;
+	font-weight: 700;
+}
+
+
 /* Escritorio */
 @media(min-width: 1200px){
-	}
+	
+}
 /* tablet landscape*/
 @media(min-width: 768px) and (max-width: 979px){
+	.contimg, .carousel-caption {
+		width: 40%!important;
+		margin:0!important;
 	}
+	
+	.carousel-caption {
+	margin-top: 50px;
+	}
+
+}
 
 /* Tablet o smartphone grande/landscape */
 @media(max-width: 767px){
+
+    .contimg, .carousel-caption {
+		width: 40%!important;
+		margin-left:10px!important;
+		margin-right: 10px!important;
+		margin-top: 60px!important;
 	}
+	.item-p{
+		height: 350px;
+	}
+}
 /* Smartphone portait */
 @media(max-width: 480px){
-	}
+		body{
+			padding: 0;
+		}
+		h1{
+			font-size: 3em;
+		}
+		p{
+			font-size: 12px !important;
+			font-style: normal !important;
+		}
+		.logo{
+			margin-left: 15px;
+		}
+		
+		.contimg, .carousel-caption{
+			display: block;
+			width: 90%!important;
+			margin-top: 10px!important;
+			text-align: center!important;
+
+		}
+		.item-p{
+			padding: 20px!important;
+		}
+
+			
+		.contimg img{
+			width: 60%!important;
+		}
+
+/*
+		.item-p{
+			margin-top: 0px;
+			height: 500px;
+		}
+		.item-p-txt{
+			font-family: 'Playball';
+		}
+		.carousel-caption {
+	margin-top: 50px;
+	}*/
+
+}
 .container-fluid{
 	padding: 0;
 }
@@ -191,9 +256,38 @@ ul li{
 }
 
 
+/****************PROCESO****************/
+
+.contimg, .carousel-caption {
+	display: inline-block;
+	width: 35%;
+	margin-right: 5%;
+	margin-left:5%;
+}
+
+.contimg > img{
+	width: 100%;
+}
+
 .item-p{
 	background-image: url(../images/bg/papel2.png);
+	padding-left: 10%;	
 }
+.carousel-caption {
+/*	position: relative;
+    top:10px;
+    padding: 20px;*/
+    text-align: left;
+}
+
+
+.item-p-txt{
+	font-family: 'Playball';
+    line-height: 1.3em;
+    font-size: 1.5em;
+    color:#18272F;
+}
+
 
 /************** GALERÍA *****************/
 	.galeria{
@@ -228,7 +322,20 @@ ul li{
 	.size-1of2 { width: 50%; }
 	.size-1of3 { width: 33.333%; }
 
-	/*************** GALERÍA **************/
+	.up-img{
+	background-color: rgba(24, 39, 47, .6);
+	z-index: 99;
+	height: 100px;
+	}
+	
+	.cont-img img{
+	z-index: -99;
+	}
+	
+	a.ind-img:hover{
+		opacity: .5;
+	}
+	/*************** FIN GALERÍA **************/
 
 .btn-evento{
 	display: inline;
@@ -388,7 +495,7 @@ button:focus {
 }
 .cont-env{
 	padding: 0;
-	left: -15px;
+	left: -15	px;
 }
 .env{
 	background-color: transparent;
