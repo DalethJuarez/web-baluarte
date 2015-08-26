@@ -55,13 +55,13 @@
 <!-- COMIENZA HEADER CON NAV PRINCIPAL	 -->
 	<head>
 	<div class="container-fluid ">
-		<div class="row-fluid nav-princ" style="opacity: 0;">
+		<div class="row-fluid nav-princ " style="opacity: 0;">
 			<div class="offset1 span2 ">
-				<div class="logo" style="visibility: hidden;"><img src="images/logo-header.png" alt=""></div>
+				<div class="logo" style="visibility: hidden;"><a href="#inicio"><img src="images/logo-header.png" alt=""></a></div>
 			</div>
-			<div class="offset2 span6 text-right menu"> <!-- class= menu -->
+			<div class="offset3 span6 text-right menu pull-right"> <!-- class= menu -->
 				
-				<nav>
+				<nav class="">
 					<!-- MENU PARA DESKTOP -->
 					<ul class="nav-pills visible-desktop">
 						<li><a href="#inicio">Baluarte</a></li>
@@ -70,29 +70,32 @@
 						<li><a href="#proceso">Proceso</a></li>
 						<li><a href="#galeria">Galería</a></li>
 						<li><a href="#eventos">Eventos</a></li>
-						<li><a href="#tienda">Tienda</a></li>
+						<!-- <li><a href="#tienda">Tienda</a></li> -->
 						<li><a href="#contacto">Contacto</a></li>
 					</ul> 
 					<!-- MENU PARA TABLET -->
 
-					<div class="row-fluid">
-						<div class="offset9 span3">
-							 <div class="visible-tablet">
-								<ul class="menu-tablet">
-									<li><span class="icon-align-justify"></span>
-										<ul class="submenu">
-											<li role="presentation"><a href="#inicio">Baluarte</a></li>
-											<li role="presentation"><a href="#historia">Historia</a></li>
-											<li role="presentation"><a href="#tequilas">Tequilas</a></li>
-											<li role="presentation"><a href="#proceso">Proceso</a></li>
-											<li role="presentation"><a href="#galeria">Galería</a></li>
-											<li role="presentation"><a href="#eventos">Eventos</a></li>
-											<li role="presentation"><a href="#tienda">Tienda</a></li>
-											<li role="presentation"><a href="#contacto">Contacto</a></li>
-										</ul>
-									</li>
-								</ul>
-							</div> 
+					<div class="row-fluid hidden-desktop">
+						<div class="span11 text-right">
+							<div class="dropdown">
+							  <button class=" dropdown-toggle" type="button" id="dropdownMenu2" data-toggle="dropdown" aria-haspopup="true" aria-expanded="true">
+							    
+							    <span class="glyphicon glyphicon-menu-hamburger blanco" aria-hidden="true"></span>
+							  </button>
+							  <ul class="dropdown-menu pull-right" aria-labelledby="dropdownMenu2">
+							    <li role="presentation"><a href="#inicio">Baluarte</a></li>
+									<li role="presentation"><a href="#historia">Historia</a></li>
+									<li role="presentation"><a href="#tequilas">Tequilas</a></li>
+									<li role="presentation"><a href="#proceso">Proceso</a></li>
+									<li role="presentation"><a href="#galeria">Galería</a></li>
+									<li role="presentation"><a href="#eventos">Eventos</a></li>
+									<!-- <li role="presentation"><a href="#tienda">Tienda</a></li> -->
+									<li role="presentation"><a href="#contacto">Contacto</a></li>
+								  </ul>
+								</div>
+
+							
+							  
 						</div>	
 					</div>
 	 			</nav>
@@ -234,7 +237,7 @@
 					        <h4 class="modal-title">Medalla de Oro Nueva York 2015</h4>
 					      </div>
 					      <div class="modal-body">
-					       <img src="images/2013-1.png" alt="">
+					       <img src="images/2015.png" alt="">
 					      </div>
 					      <div class="modal-footer">
 					        <button type="button" class="bot" data-dismiss="modal">Ok</button>
@@ -288,54 +291,57 @@
 								prisa, manteniendo sólo el corazón del tequila.</p>
 						</div>
 					</div>
-					<div class="row-fluid ">
-						<div class="span1"> &nbsp </div>
-						<div class="span4">
-							
-							<div class="row-fluid">
-								<div class="span5">
-									<img class="img-teq"src="images/reposado-grupo.png" alt="...">
-								</div>
-								<div class="span7">
-									<h3 style="color: #A29572; font-family: 'Playball'; font-size:3rem;">Baluarte Reposado</h3>
-									<span class="txt-teq">Cristalino, brillante, color
-									amarillo paja. Destacan
-									delicados aromas frutales
-									como la cereza y durazno,
-									delicadas especias como la
-									canela y anís. Aromas de
-									agave cocido, notas herbales
-									como la menta y delicados
-									matices de chocolate,
-									caramelo y vainilla. Frutos
-									secos como la nuez</span >
-									<!-- <br><a style="color: #172738;"  href="#tienda">Comprar ahora</a>
-									<span class="glyphicon glyphicon-shopping-cart" aria-hidden="true"></span> -->
+					<div class="container-fluid">
+						<div class="row-fluid ">
+							<div class="span1"> &nbsp </div>
+							<div class="span4  cont-teq">
+								
+								<div class="row-fluid">
+									<div class="span5 img-teq">
+										<img class=""src="images/reposado-grupo.png" alt="...">
+									</div>
+									<div class="span7 cont-txt-teq t-rep">
+										<h3 style="color: #A29572; font-family: 'Playball'; font-size:3rem;">Baluarte Reposado</h3>
+										<span class="txt-teq">Cristalino, brillante, color
+										amarillo paja. Destacan
+										delicados aromas frutales
+										como la cereza y durazno,
+										delicadas especias como la
+										canela y anís. Aromas de
+										agave cocido, notas herbales
+										como la menta y delicados
+										matices de chocolate,
+										caramelo y vainilla. Frutos
+										secos como la nuez</span >
+										<!-- <br><a style="color: #172738;"  href="#tienda">Comprar ahora</a>
+										<span class="glyphicon glyphicon-shopping-cart" aria-hidden="true"></span> -->
+									</div>
 								</div>
 							</div>
-						</div>
-						<div class="span2">&nbsp</div>
-						<div class="span4">
-							<div class="row-fluid text-right">
-								<div class="span7">
-									<h3 style="color: #A29572; font-family: 'Playball'; font-size:3rem;">Baluarte Blanco</h3>
-									<span class="txt-teq ">Cristalino, brillante, de
-									matices plateados y gran
-									cuerpo. Destacan los aromas
-									frutales como la piña, toronja
-									y limón, el agave cocido es
-									intenso, delicados tonos de
-									vainilla y caramelo, aromas
-									herbales como el tomillo. El
-									ataque en boca es intenso,
-									destacan los aromas dulces
-									del agave y críticos. De gran
-									permanencia.</span >
-									<!-- <br><span><a style="color: #172738;" href="#tienda">Comprar ahora</a></span>
-									<span class="glyphicon glyphicon-shopping-cart" aria-hidden="true"></span> -->
-								</div>
-								<div class="span5">
-									<img class="img-teq"src="images/blanco-grupo.png" alt="...">
+							<div class="span2">&nbsp</div>
+							<div class="span4 cont-teq">
+								<div class="row-fluid ">
+									<div class="span5 img-teq t-blanc">
+										<img class=""src="images/blanco-grupo.png" alt="...">
+									</div>
+									<div class="span7 cont-txt-teq t-blanc	">
+										<h3 style="color: #A29572; font-family: 'Playball'; font-size:3rem;">Baluarte Blanco</h3>
+										<span class="txt-teq ">Cristalino, brillante, de
+										matices plateados y gran
+										cuerpo. Destacan los aromas
+										frutales como la piña, toronja
+										y limón, el agave cocido es
+										intenso, delicados tonos de
+										vainilla y caramelo, aromas
+										herbales como el tomillo. El
+										ataque en boca es intenso,
+										destacan los aromas dulces
+										del agave y críticos. De gran
+										permanencia.</span >
+										<!-- <br><span><a style="color: #172738;" href="#tienda">Comprar ahora</a></span>
+										<span class="glyphicon glyphicon-shopping-cart" aria-hidden="true"></span> -->
+									</div>
+									
 								</div>
 							</div>
 						</div>
@@ -344,20 +350,16 @@
 
 
 				<div class="visible-phone">
-					<div class="row-fluid">
-						<div class="span10 text-center">
-							<p class="azul">Elaboramos nuestro tequila con agaves Tequilana Weber Azul al 100%. Los hermosos agaves azules
-								se cortan en mitades y se cuecen a vapor, lentamente, en hornos de mampostería. Destilamos sin
-								prisa, manteniendo sólo el corazón del tequila.</p>
-						</div>
+					<div class="text-center">
+						<p class="azul">Elaboramos nuestro tequila con agaves Tequilana Weber Azul al 100%. Los hermosos agaves azules
+							se cortan en mitades y se cuecen a vapor, lentamente, en hornos de mampostería. Destilamos sin
+							prisa, manteniendo sólo el corazón del tequila.</p>
 					</div>
-					<div class="row-fluid">
-						<!-- <div class="span2">
-							<img class="img-teq"src="images/reposado-grupo.png" alt="...">
-						</div> -->
-						<div class="span2">
-							<img class="img-teq"src="images/reposado-grupo.png" alt="...">
+					<div class="cont-teq-m">
+						
+						<div class="txt-teq-m">
 							<h3 style="color: #A29572; font-family: 'Playball'; font-size:3rem;">Baluarte Reposado</h3>
+							<!-- <img class="img-teq-mo" height="250px" src="images/reposado-grupo.png" alt="..."> <br> -->
 							<span class="txt-teq">Cristalino, brillante, color
 							amarillo paja. Destacan
 							delicados aromas frutales
@@ -369,32 +371,29 @@
 							matices de chocolate,
 							caramelo y vainilla. Frutos
 							secos como la nuez</span >
-							<!-- <br><a style="color: #172738;"  href="#tienda">Comprar ahora</a>
-							<span class="glyphicon glyphicon-shopping-cart" aria-hidden="true"></span> -->
+						</div>
+						<div class="img-teq-m">
+							<img src="images/reposado-grupo.png" alt="...">
 						</div>
 					</div>
-
-					<div class="row-fluid text-right">
-						<div class="span3">
-							<h3 style="color: #A29572; font-family: 'Playball'; font-size:3rem;">Baluarte Blanco</h3>
-							<span class="txt-teq ">Cristalino, brillante, de
-							matices plateados y gran
-							cuerpo. Destacan los aromas
-							frutales como la piña, toronja
-							y limón, el agave cocido es
-							intenso, delicados tonos de
-							vainilla y caramelo, aromas
-							herbales como el tomillo. El
-							ataque en boca es intenso,
-							destacan los aromas dulces
-							del agave y críticos. De gran
-							permanencia.</span >
-							<!-- <br><span><a style="color: #172738;" href="#tienda">Comprar ahora</a></span>
-							<span class="glyphicon glyphicon-shopping-cart" aria-hidden="true"></span> -->
-						</div>
-						<!-- <div class="span3">
-							<img class="img-teq"src="images/blanco-grupo.png" alt="...">
-						</div> -->
+					<div class="img-teq-m">
+						<img src="images/blanco-grupo.png" alt="...">
+					</div>
+					<div class="txt-teq-m">
+						<h3 style="color: #A29572; font-family: 'Playball'; font-size:3rem;">Baluarte Blanco</h3>
+						<!-- <img class="img-teq-mo" height="250px" src="images/blanco-grupo.png" alt="..."> <br> -->
+						<span class="txt-teq ">Cristalino, brillante, de
+						matices plateados y gran
+						cuerpo. Destacan los aromas
+						frutales como la piña, toronja
+						y limón, el agave cocido es
+						intenso, delicados tonos de
+						vainilla y caramelo, aromas	
+						herbales como el tomillo. El
+						ataque en boca es intenso,
+						destacan los aromas dulces
+						del agave y críticos. De gran
+						permanencia.</span >
 					</div>
 
 
@@ -595,67 +594,63 @@
 		</section> -->
 
 		<!-- AQUÍ COMIENZA LA PANTALLA DE LA GALERÍA-->
-		<div class="galeria" id="galeria">
 		<section class="galeria bg" id="galeria">
 			<div class="row-fluid">
 				<div class="span1"> &nbsp </div>
 				<div class="span10">
 					<h1> Galería Baluarte</h1>
 					<p>Lorem ipsum dolor sit amet, consectetur adipisicing elit. Iure, culpa! Cum assumenda, qui odio dignissimos, labore nihil vero aut expedita excepturi suscipit illo, sapiente neque magni eligendi voluptas provident a.</p>
-					
 				</div>
-		</div>
-		</div>
 			</div>
 			<div class="row-fluid">
 				<div class="span12">
 					
 					<div id="grid" data-columns >
 			            <div class="column size-1of3">
-							<a href="images/galeria/jimador.png" class="">
-								<img src="images/galeria/jimador.png" alt="" />
+							<a href="images/galeria/5.jpg" class="" data-toggle="lightbox" data-gallery="global-gallery" data-parent="" >
+								<img src="images/galeria/5.jpg" alt=""  />
 							</a>
-							<a href="iimages/galeria/3.jpg" class="">
-								<img src="images/galeria/3.jpg" alt="" />
+							<a href="images/galeria/jimador.png" class="" data-toggle="lightbox" data-gallery="global-gallery" data-parent="">
+								<img src="images/galeria/jimador.png" alt=""  />
 							</a>
-							<a href="images/galeria/cilindros-familia3.png" class="">
-								<img src="images/galeria/cilindros-familia3.png" alt="" />
+							<a href="images/galeria/4.jpg" class="" data-toggle="lightbox"  data-gallery="global-gallery" data-parent="">
+								<img src="images/galeria/4.jpg" alt=""  />
 							</a>
-							<a href="images/galeria/agave.png" class="">
-								<img src="images/galeria/agave.png" alt="" />
+							<a href="images/galeria/8.jpg" class="" data-toggle="lightbox"  data-gallery="global-gallery" data-parent="">
+								<img src="images/galeria/8.jpg" alt=""  />
 							</a>
 
 			            </div>
 					</div>
 					<div id="grid" data-columns >
 			            <div class="column size-1of3">
-							<a href="images/galeria/cilindro-sarape2.png" class="">
-								<img src="images/galeria/cilindro-sarape2.png" alt="" />
+							<a href="images/galeria/6.jpg" class="" data-toggle="lightbox"  data-gallery="global-gallery" data-parent="">
+								<img src="images/galeria/6.jpg" alt=""  />
 							</a>
-							<a href="images/galeria/1.jpg" class="">
-								<img src="images/galeria/1.jpg" alt="" />
+							<a href="images/galeria/9.png" class="" data-toggle="lightbox"  data-gallery="global-gallery" data-parent="">
+								<img src="images/galeria/9.png" alt=""  />
 							</a>
-							<a href="images/galeria/cilindro-blanco.png" class="">
-								<img src="images/galeria/cilindro-blanco.png" alt="" />
+							<a href="images/galeria/1.jpg" class="" data-toggle="lightbox"  data-gallery="global-gallery" data-parent="">
+								<img src="images/galeria/1.jpg" alt=""  />
 							</a>
-							<a href="images/galeria/cilindros-familia2.png" class="">
-								<img src="images/galeria/cilindros-familia2.png" alt="" />
+							<a href="images/galeria/cilindros-familia2.png" class="" data-toggle="lightbox"  data-gallery="global-gallery" data-parent="">
+								<img src="images/galeria/cilindros-familia2.png" alt=""  />
 							</a>
 			            </div>	
 					</div>
 					<div id="grid" data-columns >
 			            <div class="column size-1of3">
-							<a href="images/galeria/2.jpg" class="">
-								<img src="images/galeria/2.jpg" alt="" />
+							<a href="images/galeria/paisaje2.png" class="" data-toggle="lightbox"  data-gallery="global-gallery" data-parent="">
+								<img src="images/galeria/paisaje2.png" alt=""  />
 							</a>
-							<a href="images/galeria/barricas.png" class="">
-								<img src="images/galeria/barricas.png" alt="" />
+							<a href="images/galeria/barricas.png" class="" data-toggle="lightbox"  data-gallery="global-gallery" data-parent="">
+								<img src="images/galeria/barricas.png" alt=""  />
 							</a>
-							<a href="images/galeria/cilindro-tecnoagave.png" class="">
-								<img src="images/galeria/cilindro-tecnoagave.png" alt="" />
+							<a href="images/galeria/2.jpg" class="" data-toggle="lightbox"  data-gallery="global-gallery" data-parent="">
+								<img  src="images/galeria/2.jpg" alt=""  />
 							</a>
-							<a href="images/galeria/paisaje2.png" class="">
-								<img src="images/galeria/paisaje2.png" alt="" />
+							<a href="images/galeria/7.jpg" class="" data-toggle="lightbox"  data-gallery="global-gallery" data-parent="">
+								<img src="images/galeria/7.jpg" alt=""  />
 							</a>
 			            </div>
 					</div>
@@ -674,10 +669,10 @@
 					</div>
 			</div>
 			<div class="cont-alfa">
-				<div class="row-fluid">
+				<div class="row-fluid cont-ev">
 					<div class="span1"> &nbsp </div>
-					<div class="span5"><img src="http://placehold.it/480x400" alt="..."></div>
-					<div class="span5">
+					<div class="span5 img-princ"><img src="http://placehold.it/480x400" alt="..."></div>
+					<div class=" cont-ev-princ span5">
 						<h3>Nombre del evento</h3>
 						<span class="sub">Fecha</span>
 						<p>Lorem ipsum dolor sit amet, consectetur adipisicing elit. Dolorum tenetur ratione itaque provident quod, omnis id. Enim, debitis accusantium atque, hic saepe similique, laboriosam odit quis temporibus error, ex sint?
@@ -693,14 +688,16 @@
 
 					</div>
 				</div>
-				<div class="row-fluid"><div class="span12">&nbsp</div></div> <!-- separador -->				
+				<div class="row-fluid"><div class="span12">&nbsp</div></div>  <!--separador -->				
 				<div class="row-fluid">
 					<div class="span1"> &nbsp </div>
-					<div class="span10">
+					<div class="span10 cont-ev-inds">
 						<div class="row-fluid">
-							<div class="span2"><img src="http://placehold.it/120x100" alt="..."></div>
-							<div class="span2">
-								<p class="titulo-eventos">Título del evento</p>
+							<div class="span2 cont-ev-ind">
+								<img src="http://placehold.it/120x100" alt="...">
+							</div>
+							<div class="span2 cont-ev-ind">
+								<p class="titulo-eventos">Título del evento 1</p>
 								<p>Fecha</p>
 								<p>Ciudad · Estado</p>
 								<p>
@@ -710,9 +707,11 @@
 									</a>
 								</p>
 							</div>
-							<div class="span2"><img src="http://placehold.it/120x100" alt="..."></div>
-							<div class="span2">
-								<p class="titulo-eventos">Título del evento</p>
+							<div class="span2 cont-ev-ind">
+								<img src="http://placehold.it/120x100" alt="...">
+							</div>
+							<div class="span2 cont-ev-ind">
+								<p class="titulo-eventos">Título del evento 2</p>
 								<p>Fecha</p>
 								<p>Ciudad · Estado</p>
 								<p>
@@ -722,9 +721,11 @@
 									</a>
 								</p>
 							</div>
-							<div class="span2"><img src="http://placehold.it/120x100" alt="..."></div>
-							<div class="span2">
-								<p class="titulo-eventos">Título del evento</p>
+							<div class="span2 cont-ev-ind">
+								<img src="http://placehold.it/120x100" alt="...">
+							</div>
+							<div class="span2 cont-ev-ind">
+								<p class="titulo-eventos">Título del evento 3</p>
 								<p>Fecha</p>
 								<p>Ciudad · Estado</p>
 								<p>
@@ -743,7 +744,7 @@
 			</div>
 			
 
-					<div id="carousel-example-generic2" class="carousel slide cont-rojo" data-ride="carousel" style="height:200px; padding:0;">
+					<div id="carousel-example-generic2" class="carousel slide cont-rojo" data-ride="carousel" style="height:200px; padding:0">
 					  <!-- Indicators -->
 					  <ol class="carousel-indicators">
 					    <li data-target="#carousel-example-generic2" data-slide-to="0" class="active"></li>
@@ -763,7 +764,7 @@
 					    <div class="item">
 					    	<img style="opacity:0;" src="http://placehold.it/1200x200" alt="...">
 						    <div class="carousel-caption2 cont-frases">
-						          <p class="frase">“Lorem ipsum dolor sit amet, consectetur adipisicing elit. Consequatur totam atque eveniet labore, odio repudiandae quidem magni provident. At eum adipisci, minima! Eos aperiam tempora suscipit mollitia esse quaerat consequatur.”.</p>
+						          <p class="frase">“Lorem ipsum dolor sit amet. Consequatur totam atque eveniet labore, odio repudiandae quidem magni provident. At eum adipisci, minima! Eos aperiam tempora suscipit mollitia esse quaerat consequatur.”.</p>
 								<small>Nombre - Puesto</small>
 						    </div>
 					    </div>
@@ -903,7 +904,7 @@
 
 
 	<!-- AQUÍ COMIENZA LA PANTALLA DE CONTACTO-->
-		<section class="contacto bg" id="contacto">
+<section class="contacto bg" id="contacto">
 			<div class="row-fluid">
 				<div class="span1"> &nbsp </div>
 					<div class="span11">
@@ -912,75 +913,35 @@
 			</div>
 			<div class="row-fluid">
 				<div class="span2"> &nbsp </div>
-				<form class="form-horizontal" role="form" method="post" action="index.php">
+				<form class="" role="form" method="post" action="index.php">
 					<div class="span4">   
-
 					    <div class="form-group">
-					        <label for="name" class="col-sm-1  control-label">Nombre: </label>
-					        <div class="col-sm-10">
-					            <input type="text" class="form-control col-sm-offset-1" id="name" name="name" placeholder="" value="">
-					        </div>
+					        <label for="name" class=" control-label">Nombre: </label>
+				         	<input type="text" class="form-control" id="name" name="name" placeholder="" value="">
 					    </div>
 					    <div class="form-group">
-					        <label for="email" class="col-sm-1  control-label">Correo: </label>
-					        <div class="col-sm-10">
-					            <input type="email" class="form-control col-sm-offset-1" id="email" name="email" placeholder="" value="">
-					        </div>
+					        <label for="email" class=" control-label">Correo: </label>
+					        <input type="email" class="form-control" id="email" name="email" placeholder="" value="">
 					    </div>
 					    <div class="form-group">
-					        <label for="message" class="col-sm-1  control-label">País:</label>
-					        <div class="col-sm-10">
-					            <input type="country" class="form-control col-sm-offset-1"  name="country" placeholder="" value="">
-					        </div>
+					        <label for="message" class=" control-label">País:</label>
+				          	<input type="country" class="form-control" name="country" placeholder="" value="">
 					    </div>
 					    <div class="form-group">
-					        <label for="message" class="col-sm-1  control-label">Ciudad:</label>
-					        <div class="col-sm-10">
-					            <input type="country" class="form-control col-sm-offset-1"  name="city" placeholder="" value="">
-					        </div>
+					        <label for="message" class=" control-label">Ciudad:</label>
+					        <input type="country" class="form-control" name="city" placeholder="" value="">
 					    </div>
 					</div>
-					<div class="offset1 span4">
+					<div class="offset1 span4 ">
 						<div class="form-group mensaje">
-					        <label for="message" class="col-sm-1  control-label">Mensaje:</label>
-					        <div class="col-sm-10">
-					            <textarea class="form-control col-sm-offset-1" rows="4" name="message" placeholder=""></textarea>
-					        </div>
+					        <label for="message" class=" control-label">Mensaje:</label>
+					        <textarea class="form-control " rows="4" name="message" placeholder=""></textarea>
 					    </div>
-
-					    <!-- <div class="form-group">
-					        <label for="human" class="col-sm-2 control-label">2 + 3 = ?</label>
-					        <div class="col-sm-10">
-					            <input type="text" class="form-control col-sm-offset-1" id="human" name="human" placeholder="2 + 3 = ?">
-					        </div>
-					    </div> -->
-					    
-					        <div class="col-sm-10 cont-env ">
-					            <input id="submit" name="submit" type="submit" value="Enviar" class="bot env">
-					        </div>
-					    
-					    <!-- <div class="form-group">
-					        <div class="col-sm-10 col-sm-offset-2">
-					            <! Will be used to display an alert to the user>
-					        </div>
-					    </div> -->
+				        <div class=" cont-env ">
+				            <input id="submit" name="submit" type="submit" value="Enviar" class="bot env">
+				        </div>
 					</div> 
 				</form>
-
-	
-
-				<!-- <div class="span4">
-					<input type="text" class="form-control" placeholder="Nombre:" aria-describedby="basic-addon1">
-					<input type="text" class="form-control" placeholder="Correo:" aria-describedby="basic-addon1">
-					<input type="text" class="form-control" placeholder="País:" aria-describedby="basic-addon1">
-					<input type="text" class="form-control" placeholder="Ciudad:" aria-describedby="basic-addon1">
-					
-				</div>
-				<div class="span6">
-					<input type="text" class="form-control" placeholder="Mensaje:" aria-describedby="basic-addon1">
-					<button type="button" class="btn">Enviar</button>
-					
-				</div> -->
 			</div>
 		</section>
 
@@ -988,7 +949,7 @@
 	</div>
 
 <!-- COMIENZA FOOTER DE USUARIO -->
-	<!-- <footer class="container-fluid">
+	<footer class="container-fluid hidden">
 		<div class="menu">
 			<nav>
 				<ul class="nav-user nav-pills">
@@ -999,13 +960,72 @@
 			</nav>
 		</div>
 		
-	</footer> -->
+	</footer>
 
 
     <!-- jQuery (necessary for Bootstrap's JavaScript plugins) -->
     <script src="https://ajax.googleapis.com/ajax/libs/jquery/1.11.3/jquery.min.js"></script>
     <!-- Include all compiled plugins (below), or include individual files as needed -->
     <script src="js/bootstrap.min.js"></script>
+    <script src="js/ekko-lightbox.js"></script>
+
+    <script type="text/javascript">
+            $(document).ready(function ($) {
+                // delegate calls to data-toggle="lightbox"
+                $(document).delegate('*[data-toggle="lightbox"]:not([data-gallery="navigateTo"])', 'click', function(event) {
+                    event.preventDefault();
+                    return $(this).ekkoLightbox({
+                        onShown: function() {
+                            if (window.console) {
+                                return console.log('Checking our the events huh?');
+                            }
+                        },
+						onNavigate: function(direction, itemIndex) {
+                            if (window.console) {
+                                return console.log('Navigating '+direction+'. Current item: '+itemIndex);
+                            }
+						}
+                    });
+                });
+
+                //Programatically call
+                $('#open-image').click(function (e) {
+                    e.preventDefault();
+                    $(this).ekkoLightbox();
+                });
+                $('#open-youtube').click(function (e) {
+                    e.preventDefault();
+                    $(this).ekkoLightbox();
+                });
+
+				// navigateTo
+                $(document).delegate('*[data-gallery="navigateTo"]', 'click', function(event) {
+                    event.preventDefault();
+                    return $(this).ekkoLightbox({
+                        onShown: function() {
+
+							var a = this.modal_content.find('.modal-footer a');
+							if(a.length > 0) {
+
+								a.click(function(e) {
+
+									e.preventDefault();
+									this.navigateTo(2);
+
+								}.bind(this));
+
+							}
+
+                        }
+                    });
+                });
+
+
+            });
+
+
+			$('.dropdown-toggle').dropdown()
+        </script>
 
 </body>
 </html>
